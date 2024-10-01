@@ -1,7 +1,6 @@
 import sys
 import time
 
-
 def type_out(text):
       for char in text:
             sys.stdout.write(char)
