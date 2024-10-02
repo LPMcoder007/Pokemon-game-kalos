@@ -1,0 +1,39 @@
+type_out("You are challenged by a pokemon named ultra necrozma", 0.05)
+type_out("You send out a pokemon named gengar", 0.05)
+type_out("Your moveset is shadow ball,shadow claw,shadow sneak,phantom force", 0.05)
+type_out("Hp of ultra necrozma is  350 and hp of gengar is 220")
+nec=("Psystrike", "Psychic", "Psybeam", "outrage")
+import random
+cchoice = random.choice(nec)
+type_out("ultra necrozma uses " + cchoice, 0.05)
+type_out("Hp of gengar is now 140")
+ddd=input("do you want to g max:")
+yes='yes'
+if ddd==yes:
+  type_out("You have used gmax", 0.05)
+  type_out("Your g max moves are max terror,max phantasam")
+  gmax=input("which one do you want to use:(hint use max terror which is super effective")
+  maxterror='max terror'
+  maxphantasam='max phantasam'
+  if gmax==maxterror:
+    type_out("You have used max terror", 0.05)
+    type_out("It's supper effective for ultra necrozma ", 0.05)
+    type_out("Hp of ultra necrozma is now 0", 0.05)
+    type_out("You have won the battle", 0.05)
+
+  else:
+    type_out("You have used max phantasam", 0.05)
+    type_out("It's supper effective for ultra necrozma ", 0.05)
+    type_out("Hp of ultra necrozma is now 0", 0.05)
+    type_out("You have won the battle", 0.05)
+else:
+  ml=input("Do you want to use a z move:")
+  if ml==yes:
+    type_out("You have used z move never ending night mare", 0.05)
+    type_out("It's supper effective for ultra necrozma ", 0.05)
+    type_out("Hp of ultra necrozma is now 0", 0.05)
+    type_out("You have won the battle", 0.05)
+  else:
+    type_out("Then you have lost the battle " ,0.05)
+    type_out("Bye" ,0.05)
+  
